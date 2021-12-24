@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 9 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-KT">
+              <span class="suite-name border-failed">KT</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-KT">
+                    <span>C:\Users\91992\Aug21\FIRSTMAVENProject\testng123.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-KT">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-KT">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-KT">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-KT">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-KT">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-KT">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">24 methods, 9 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-KT" class="hide-methods failed suite-KT"> (hide)</a> <!-- hide-methods failed suite-KT -->
+                      <a href="#" panel-name="suite-KT" class="show-methods failed suite-KT"> (show)</a> <!-- show-methods failed suite-KT -->
+                    </span>
+                    <div class="method-list-content failed suite-KT">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG" hash-for-method="getUserData">getUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG" hash-for-method="methodAFromAssertionsInTestNG">methodAFromAssertionsInTestNG</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.AssertionsInTestNG" hash-for-method="methodAFromAssertionsInTestNG">methodAFromAssertionsInTestNG</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.AssertionsInTestNG" hash-for-method="methodBFromAssertionsInTestNG">methodBFromAssertionsInTestNG</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG" hash-for-method="methodBFromAssertionsInTestNG">methodBFromAssertionsInTestNG</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.DependentTestCases" hash-for-method="verfyExistingUserCanBeEdited">verfyExistingUserCanBeEdited</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.InvocationCount" hash-for-method="verfyExistingUserCanBeEdited">verfyExistingUserCanBeEdited</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.PriorityInTestNG" hash-for-method="verfyNewUserCanBeAddedToSystem">verfyNewUserCanBeAddedToSystem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG" hash-for-method="verifyChildPlaBotFlow">verifyChildPlaBotFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-KT -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-KT" class="hide-methods passed suite-KT"> (hide)</a> <!-- hide-methods passed suite-KT -->
+                      <a href="#" panel-name="suite-KT" class="show-methods passed suite-KT"> (show)</a> <!-- show-methods passed suite-KT -->
+                    </span>
+                    <div class="method-list-content passed suite-KT">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.AnnotationsInTestNG" hash-for-method="VerifyUserCanLoginWithValidUserNameAndValidPassword">VerifyUserCanLoginWithValidUserNameAndValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.AnnotationsInTestNG" hash-for-method="VerifyUserCanNotLoginWithInValidUserNameAndValidPassword">VerifyUserCanNotLoginWithInValidUserNameAndValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.AnnotationsInTestNG" hash-for-method="VerifyUserCanNotLoginWithValidUserNameAndInValidPassword">VerifyUserCanNotLoginWithValidUserNameAndInValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.Annotation2" hash-for-method="methodAFromAnnotation2">methodAFromAnnotation2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.Annotation2" hash-for-method="methodBFromAnnotation2">methodBFromAnnotation2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.EnableClass" hash-for-method="methodBFromEnableClass">methodBFromEnableClass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.InvocationCount" hash-for-method="verfyExistingUserCanBeDeleted">verfyExistingUserCanBeDeleted</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.PriorityInTestNG" hash-for-method="verfyExistingUserCanBeDeleted">verfyExistingUserCanBeDeleted</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.PriorityInTestNG" hash-for-method="verfyExistingUserCanBeEdited">verfyExistingUserCanBeEdited</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.DependentTestCases" hash-for-method="verfyNewUserCanBeAddedToSystem">verfyNewUserCanBeAddedToSystem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.PriorityInTestNG" hash-for-method="verfyNewUserCanBeAddedToSystem">verfyNewUserCanBeAddedToSystem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.PriorityInTestNG" hash-for-method="verfyNewUserCanBeAddedToSystem">verfyNewUserCanBeAddedToSystem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.PriorityInTestNG" hash-for-method="verfyNewUserCanBeAddedToSystem">verfyNewUserCanBeAddedToSystem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.FIleUploadTestCase" hash-for-method="verfyUserCanUploadFileSuccessfully">verfyUserCanUploadFileSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-KT" title="KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG" hash-for-method="verifyAdultPlaBotFlow">verifyAdultPlaBotFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-KT -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-KT" class="panel KT">
+          <div class="suite-KT-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">KTCTC.FIRSTMAVENProject.DependentTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verfyExistingUserCanBeEdited">
+                  </a> <!-- verfyExistingUserCanBeEdited -->
+                  <span class="method-name">verfyExistingUserCanBeEdited</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at KTCTC.FIRSTMAVENProject.DependentTestCases.verfyExistingUserCanBeEdited(DependentTestCases.java:24)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-KT-class-failed -->
+          <div class="suite-KT-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="methodAFromAssertionsInTestNG">
+                  </a> <!-- methodAFromAssertionsInTestNG -->
+                  <span class="method-name">methodAFromAssertionsInTestNG</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Current share pricce is not displayed as per requirement expected [44] but found [44],
+	Upload file message is not displayed corret expected [1 File uploaded successfully] but found [ File uploaded successfully],
+	Inbox text is not displayed.. expected [true] but found [false]
+	at KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG.methodAFromAssertionsInTestNG(SoftAssertionsInTestNG.java:36)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="methodBFromAssertionsInTestNG">
+                  </a> <!-- methodBFromAssertionsInTestNG -->
+                  <span class="method-name">methodBFromAssertionsInTestNG</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Current share pricce is not displayed as per requirement expected [44] but found [44],
+	Upload file message is not displayed corret expected [1 File uploaded successfully] but found [ File uploaded successfully],
+	Inbox text is not displayed.. expected [true] but found [false],
+	Still message is displayed on UI expected [false] but found [true]
+	at KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG.methodBFromAssertionsInTestNG(SoftAssertionsInTestNG.java:49)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-KT-class-failed -->
+          <div class="suite-KT-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUserData">
+                  </a> <!-- getUserData -->
+                  <span class="method-name">getUserData</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Method public void KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG.getUserData(java.lang.String,java.lang.String) requires a @DataProvider named : keyValue
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyChildPlaBotFlow">
+                  </a> <!-- verifyChildPlaBotFlow -->
+                  <span class="method-name">verifyChildPlaBotFlow</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at KTCTC.FIRSTMAVENProject.BotAuto.checkBotFlow(BotAuto.java:16)
+	at KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG.verifyChildPlaBotFlow(DataPRoviderInTestNG.java:82)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-KT-class-failed -->
+          <div class="suite-KT-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">KTCTC.FIRSTMAVENProject.AssertionsInTestNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="methodAFromAssertionsInTestNG">
+                  </a> <!-- methodAFromAssertionsInTestNG -->
+                  <span class="method-name">methodAFromAssertionsInTestNG</span>
+                  <div class="stack-trace">java.lang.AssertionError: Current share pricce is not displayed as per requirement expected [44] but found [44]
+	at KTCTC.FIRSTMAVENProject.AssertionsInTestNG.methodAFromAssertionsInTestNG(AssertionsInTestNG.java:23)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="methodBFromAssertionsInTestNG">
+                  </a> <!-- methodBFromAssertionsInTestNG -->
+                  <span class="method-name">methodBFromAssertionsInTestNG</span>
+                  <div class="stack-trace">java.lang.AssertionError: Still message is displayed on UI expected [false] but found [true]
+	at KTCTC.FIRSTMAVENProject.AssertionsInTestNG.methodBFromAssertionsInTestNG(AssertionsInTestNG.java:42)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-KT-class-failed -->
+          <div class="suite-KT-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">KTCTC.FIRSTMAVENProject.InvocationCount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verfyExistingUserCanBeEdited">
+                  </a> <!-- verfyExistingUserCanBeEdited -->
+                  <span class="method-name">verfyExistingUserCanBeEdited</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at KTCTC.FIRSTMAVENProject.InvocationCount.verfyExistingUserCanBeEdited(InvocationCount.java:30)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-KT-class-failed -->
+          <div class="suite-KT-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">KTCTC.FIRSTMAVENProject.PriorityInTestNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verfyNewUserCanBeAddedToSystem">
+                  </a> <!-- verfyNewUserCanBeAddedToSystem -->
+                  <span class="method-name">verfyNewUserCanBeAddedToSystem</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at KTCTC.FIRSTMAVENProject.PriorityInTestNG.verfyNewUserCanBeAddedToSystem(PriorityInTestNG.java:18)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-KT-class-failed -->
+          <div class="suite-KT-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">KTCTC.FIRSTMAVENProject.DependentTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verfyNewUserCanBeAddedToSystem">
+                  </a> <!-- verfyNewUserCanBeAddedToSystem -->
+                  <span class="method-name">verfyNewUserCanBeAddedToSystem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-KT-class-passed -->
+          <div class="suite-KT-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAdultPlaBotFlow">
+                  </a> <!-- verifyAdultPlaBotFlow -->
+                  <span class="method-name">verifyAdultPlaBotFlow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-KT-class-passed -->
+          <div class="suite-KT-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">KTCTC.FIRSTMAVENProject.EnableClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="methodBFromEnableClass">
+                  </a> <!-- methodBFromEnableClass -->
+                  <span class="method-name">methodBFromEnableClass</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-KT-class-passed -->
+          <div class="suite-KT-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">KTCTC.FIRSTMAVENProject.FIleUploadTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verfyUserCanUploadFileSuccessfully">
+                  </a> <!-- verfyUserCanUploadFileSuccessfully -->
+                  <span class="method-name">verfyUserCanUploadFileSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-KT-class-passed -->
+          <div class="suite-KT-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">KTCTC.FIRSTMAVENProject.AnnotationsInTestNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyUserCanLoginWithValidUserNameAndValidPassword">
+                  </a> <!-- VerifyUserCanLoginWithValidUserNameAndValidPassword -->
+                  <span class="method-name">VerifyUserCanLoginWithValidUserNameAndValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyUserCanNotLoginWithInValidUserNameAndValidPassword">
+                  </a> <!-- VerifyUserCanNotLoginWithInValidUserNameAndValidPassword -->
+                  <span class="method-name">VerifyUserCanNotLoginWithInValidUserNameAndValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyUserCanNotLoginWithValidUserNameAndInValidPassword">
+                  </a> <!-- VerifyUserCanNotLoginWithValidUserNameAndInValidPassword -->
+                  <span class="method-name">VerifyUserCanNotLoginWithValidUserNameAndInValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-KT-class-passed -->
+          <div class="suite-KT-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">KTCTC.FIRSTMAVENProject.InvocationCount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verfyExistingUserCanBeDeleted">
+                  </a> <!-- verfyExistingUserCanBeDeleted -->
+                  <span class="method-name">verfyExistingUserCanBeDeleted</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-KT-class-passed -->
+          <div class="suite-KT-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">KTCTC.FIRSTMAVENProject.Annotation2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="methodAFromAnnotation2">
+                  </a> <!-- methodAFromAnnotation2 -->
+                  <span class="method-name">methodAFromAnnotation2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="methodBFromAnnotation2">
+                  </a> <!-- methodBFromAnnotation2 -->
+                  <span class="method-name">methodBFromAnnotation2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-KT-class-passed -->
+          <div class="suite-KT-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">KTCTC.FIRSTMAVENProject.PriorityInTestNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verfyExistingUserCanBeDeleted">
+                  </a> <!-- verfyExistingUserCanBeDeleted -->
+                  <span class="method-name">verfyExistingUserCanBeDeleted</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verfyExistingUserCanBeEdited">
+                  </a> <!-- verfyExistingUserCanBeEdited -->
+                  <span class="method-name">verfyExistingUserCanBeEdited</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verfyNewUserCanBeAddedToSystem">
+                  </a> <!-- verfyNewUserCanBeAddedToSystem -->
+                  <span class="method-name">verfyNewUserCanBeAddedToSystem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verfyNewUserCanBeAddedToSystem">
+                  </a> <!-- verfyNewUserCanBeAddedToSystem -->
+                  <span class="method-name">verfyNewUserCanBeAddedToSystem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verfyNewUserCanBeAddedToSystem">
+                  </a> <!-- verfyNewUserCanBeAddedToSystem -->
+                  <span class="method-name">verfyNewUserCanBeAddedToSystem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-KT-class-passed -->
+        </div> <!-- panel KT -->
+        <div panel-name="test-xml-KT" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\91992\Aug21\FIRSTMAVENProject\testng123.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;KT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;CTC&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;KTCTC.FIRSTMAVENProject.PriorityInTestNG&quot;/&gt;
+      &lt;class name=&quot;KTCTC.FIRSTMAVENProject.AnnotationsInTestNG&quot;/&gt;
+      &lt;class name=&quot;KTCTC.FIRSTMAVENProject.Annotation2&quot;/&gt;
+      &lt;class name=&quot;KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG&quot;/&gt;
+      &lt;class name=&quot;KTCTC.FIRSTMAVENProject.FIleUploadTestCase&quot;/&gt;
+      &lt;class name=&quot;KTCTC.FIRSTMAVENProject.AssertionsInTestNG&quot;/&gt;
+      &lt;class name=&quot;KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG&quot;/&gt;
+      &lt;class name=&quot;KTCTC.FIRSTMAVENProject.InvocationCount&quot;/&gt;
+      &lt;class name=&quot;KTCTC.FIRSTMAVENProject.DependentTestCases&quot;/&gt;
+      &lt;class name=&quot;KTCTC.FIRSTMAVENProject.EnableClass&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CTC --&gt;
+&lt;/suite&gt; &lt;!-- KT --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-KT" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for KT</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">CTC (10 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-KT" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for KT</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-KT" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for KT</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_KT');
+function tableData_KT() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(24);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verfyUserCanUploadFileSuccessfully')
+data.setCell(0, 2, 'KTCTC.FIRSTMAVENProject.FIleUploadTestCase')
+data.setCell(0, 3, 9611);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyAdultPlaBotFlow')
+data.setCell(1, 2, 'KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG')
+data.setCell(1, 3, 733);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyChildPlaBotFlow')
+data.setCell(2, 2, 'KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG')
+data.setCell(2, 3, 79);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verfyExistingUserCanBeDeleted')
+data.setCell(3, 2, 'KTCTC.FIRSTMAVENProject.PriorityInTestNG')
+data.setCell(3, 3, 8);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verfyNewUserCanBeAddedToSystem')
+data.setCell(4, 2, 'KTCTC.FIRSTMAVENProject.PriorityInTestNG')
+data.setCell(4, 3, 8);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'methodAFromAssertionsInTestNG')
+data.setCell(5, 2, 'KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG')
+data.setCell(5, 3, 4);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'methodBFromAssertionsInTestNG')
+data.setCell(6, 2, 'KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG')
+data.setCell(6, 3, 4);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verfyExistingUserCanBeDeleted')
+data.setCell(7, 2, 'KTCTC.FIRSTMAVENProject.InvocationCount')
+data.setCell(7, 3, 3);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verfyNewUserCanBeAddedToSystem')
+data.setCell(8, 2, 'KTCTC.FIRSTMAVENProject.DependentTestCases')
+data.setCell(8, 3, 3);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verfyNewUserCanBeAddedToSystem')
+data.setCell(9, 2, 'KTCTC.FIRSTMAVENProject.PriorityInTestNG')
+data.setCell(9, 3, 2);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'VerifyUserCanNotLoginWithInValidUserNameAndValidPassword')
+data.setCell(10, 2, 'KTCTC.FIRSTMAVENProject.AnnotationsInTestNG')
+data.setCell(10, 3, 2);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'methodBFromAnnotation2')
+data.setCell(11, 2, 'KTCTC.FIRSTMAVENProject.Annotation2')
+data.setCell(11, 3, 2);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'methodBFromEnableClass')
+data.setCell(12, 2, 'KTCTC.FIRSTMAVENProject.EnableClass')
+data.setCell(12, 3, 2);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'VerifyUserCanNotLoginWithValidUserNameAndInValidPassword')
+data.setCell(13, 2, 'KTCTC.FIRSTMAVENProject.AnnotationsInTestNG')
+data.setCell(13, 3, 2);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verfyNewUserCanBeAddedToSystem')
+data.setCell(14, 2, 'KTCTC.FIRSTMAVENProject.PriorityInTestNG')
+data.setCell(14, 3, 2);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verfyNewUserCanBeAddedToSystem')
+data.setCell(15, 2, 'KTCTC.FIRSTMAVENProject.PriorityInTestNG')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'VerifyUserCanLoginWithValidUserNameAndValidPassword')
+data.setCell(16, 2, 'KTCTC.FIRSTMAVENProject.AnnotationsInTestNG')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verfyExistingUserCanBeEdited')
+data.setCell(17, 2, 'KTCTC.FIRSTMAVENProject.PriorityInTestNG')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'methodAFromAnnotation2')
+data.setCell(18, 2, 'KTCTC.FIRSTMAVENProject.Annotation2')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'methodBFromAssertionsInTestNG')
+data.setCell(19, 2, 'KTCTC.FIRSTMAVENProject.AssertionsInTestNG')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'methodAFromAssertionsInTestNG')
+data.setCell(20, 2, 'KTCTC.FIRSTMAVENProject.AssertionsInTestNG')
+data.setCell(20, 3, 1);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verfyExistingUserCanBeEdited')
+data.setCell(21, 2, 'KTCTC.FIRSTMAVENProject.DependentTestCases')
+data.setCell(21, 3, 1);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verfyExistingUserCanBeEdited')
+data.setCell(22, 2, 'KTCTC.FIRSTMAVENProject.InvocationCount')
+data.setCell(22, 3, 1);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'getUserData')
+data.setCell(23, 2, 'KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG')
+data.setCell(23, 3, 0);
+window.suiteTableData['KT']= { tableData: data, tableDiv: 'times-div-KT'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <div id="times-div-KT">
+              </div> <!-- times-div-KT -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-KT" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for KT</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-KT" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">16 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">KTCTC.FIRSTMAVENProject.DependentTestCases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verfyExistingUserCanBeDeleted</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyNewUserCanBeAdded</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">KTCTC.FIRSTMAVENProject.EnableClass</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">methodAFromEnableClass</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">KTCTC.FIRSTMAVENProject.FIleUploadTestCase</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">KTCTC.FIRSTMAVENProject.InvocationCount</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verfyNewUserCanBeAddedToSystem</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">KTCTC.FIRSTMAVENProject.Annotation2</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-KT" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">KTCTC.FIRSTMAVENProject.AnnotationsInTestNG</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">10 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">KTCTC.FIRSTMAVENProject.PriorityInTestNG</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verfyNewUserCanBeAddedToSystem</span>
+                <span class="method-start">53 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verfyNewUserCanBeAddedToSystem</span>
+                <span class="method-start">64 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verfyNewUserCanBeAddedToSystem</span>
+                <span class="method-start">67 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verfyNewUserCanBeAddedToSystem</span>
+                <span class="method-start">74 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verfyExistingUserCanBeEdited</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verfyExistingUserCanBeDeleted</span>
+                <span class="method-start">87 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">KTCTC.FIRSTMAVENProject.AnnotationsInTestNG</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">105 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethodAnnotation</span>
+                <span class="method-start">107 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyUserCanLoginWithValidUserNameAndValidPassword</span>
+                <span class="method-start">109 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethodAnnotation</span>
+                <span class="method-start">111 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethodAnnotation</span>
+                <span class="method-start">112 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyUserCanNotLoginWithInValidUserNameAndValidPassword</span>
+                <span class="method-start">115 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethodAnnotation</span>
+                <span class="method-start">119 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethodAnnotation</span>
+                <span class="method-start">122 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyUserCanNotLoginWithValidUserNameAndInValidPassword</span>
+                <span class="method-start">122 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethodAnnotation</span>
+                <span class="method-start">125 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">126 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">KTCTC.FIRSTMAVENProject.Annotation2</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">128 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethodAnnotation</span>
+                <span class="method-start">129 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">methodAFromAnnotation2</span>
+                <span class="method-start">129 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethodAnnotation</span>
+                <span class="method-start">131 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethodAnnotation</span>
+                <span class="method-start">133 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">methodBFromAnnotation2</span>
+                <span class="method-start">134 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethodAnnotation</span>
+                <span class="method-start">137 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">137 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyAdultPlaBotFlow</span>
+                <span class="method-start">146 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyChildPlaBotFlow</span>
+                <span class="method-start">882 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">KTCTC.FIRSTMAVENProject.FIleUploadTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">962 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethodAnnotation</span>
+                <span class="method-start">963 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verfyUserCanUploadFileSuccessfully</span>
+                <span class="method-start">963 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verfyUserCanUploadFileSuccessfully status=SUCCESS method=FIleUploadTestCase.verfyUs...)</span>
+                <span class="method-start">10575 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethodAnnotation</span>
+                <span class="method-start">10578 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">10579 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">KTCTC.FIRSTMAVENProject.AssertionsInTestNG</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">methodAFromAssertionsInTestNG</span>
+                <span class="method-start">10579 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">methodBFromAssertionsInTestNG</span>
+                <span class="method-start">10581 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">methodAFromAssertionsInTestNG</span>
+                <span class="method-start">10584 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">methodBFromAssertionsInTestNG</span>
+                <span class="method-start">10590 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">KTCTC.FIRSTMAVENProject.InvocationCount</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verfyExistingUserCanBeDeleted</span>
+                <span class="method-start">10596 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verfyExistingUserCanBeEdited</span>
+                <span class="method-start">10602 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">KTCTC.FIRSTMAVENProject.DependentTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">10606 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethodAnnotation</span>
+                <span class="method-start">10607 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verfyNewUserCanBeAddedToSystem</span>
+                <span class="method-start">10607 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethodAnnotation</span>
+                <span class="method-start">10612 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethodAnnotation</span>
+                <span class="method-start">10615 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verfyExistingUserCanBeEdited</span>
+                <span class="method-start">10616 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethodAnnotation</span>
+                <span class="method-start">10618 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">10620 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">KTCTC.FIRSTMAVENProject.EnableClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">methodBFromEnableClass</span>
+                <span class="method-start">10622 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">KTCTC.FIRSTMAVENProject.AnnotationsInTestNG</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">10626 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">10707 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

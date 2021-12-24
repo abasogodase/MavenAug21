@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="KTCTC">
+  <test thread-count="5" name="Smoke">
+    <classes>
+      <class name="KTCTC.FIRSTMAVENProject.AnnotationsInTestNG"/>
+     
+    </classes>
+  </test> <!-- Smoke -->
+  
+  <test thread-count="5" name="Regression">
+    <classes>      
+      <class name="KTCTC.FIRSTMAVENProject.Annotation2"/>
+      <class name="KTCTC.FIRSTMAVENProject.FIleUploadTestCase"/>
+    </classes>
+  </test> <!-- Smoke -->
+</suite> <!-- KTCTC -->

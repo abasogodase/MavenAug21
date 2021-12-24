@@ -1,0 +1,549 @@
+<html>
+<head>
+<title>TestNG:  CTC</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>CTC</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/9/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Dec 17 22:00:32 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>10 seconds (10619 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG.getUserData()'><b>getUserData</b><br>Test class: KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG</td>
+<td><div><pre>org.testng.TestNGException: 
+Method public void KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG.getUserData(java.lang.String,java.lang.String) requires a @DataProvider named : keyValue
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace736778932", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace736778932'><pre>org.testng.TestNGException: 
+Method public void KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG.getUserData(java.lang.String,java.lang.String) requires a @DataProvider named : keyValue
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:559)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:772)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG@34cd072c</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.AssertionsInTestNG.methodAFromAssertionsInTestNG()'><b>methodAFromAssertionsInTestNG</b><br>Test class: KTCTC.FIRSTMAVENProject.AssertionsInTestNG</td>
+<td><div><pre>java.lang.AssertionError: Current share pricce is not displayed as per requirement expected [44] but found [44]
+	at KTCTC.FIRSTMAVENProject.AssertionsInTestNG.methodAFromAssertionsInTestNG(AssertionsInTestNG.java:23)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1556520190", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1556520190'><pre>java.lang.AssertionError: Current share pricce is not displayed as per requirement expected [44] but found [44]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at KTCTC.FIRSTMAVENProject.AssertionsInTestNG.methodAFromAssertionsInTestNG(AssertionsInTestNG.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.AssertionsInTestNG@5faeada1</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG.methodAFromAssertionsInTestNG()'><b>methodAFromAssertionsInTestNG</b><br>Test class: KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Current share pricce is not displayed as per requirement expected [44] but found [44],
+	Upload file message is not displayed corret expected [1 File uploaded successfully] but found [ File uploaded successfully],
+	Inbox text is not displayed.. expected [true] but found [false]
+	at KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG.methodAFromAssertionsInTestNG(SoftAssertionsInTestNG.java:36)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1653751526", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1653751526'><pre>java.lang.AssertionError: The following asserts failed:
+	Current share pricce is not displayed as per requirement expected [44] but found [44],
+	Upload file message is not displayed corret expected [1 File uploaded successfully] but found [ File uploaded successfully],
+	Inbox text is not displayed.. expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG.methodAFromAssertionsInTestNG(SoftAssertionsInTestNG.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG@528931cf</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.AssertionsInTestNG.methodBFromAssertionsInTestNG()'><b>methodBFromAssertionsInTestNG</b><br>Test class: KTCTC.FIRSTMAVENProject.AssertionsInTestNG</td>
+<td><div><pre>java.lang.AssertionError: Still message is displayed on UI expected [false] but found [true]
+	at KTCTC.FIRSTMAVENProject.AssertionsInTestNG.methodBFromAssertionsInTestNG(AssertionsInTestNG.java:42)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace566641954", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace566641954'><pre>java.lang.AssertionError: Still message is displayed on UI expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertFalse(Assert.java:67)
+	at KTCTC.FIRSTMAVENProject.AssertionsInTestNG.methodBFromAssertionsInTestNG(AssertionsInTestNG.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.AssertionsInTestNG@5faeada1</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG.methodBFromAssertionsInTestNG()'><b>methodBFromAssertionsInTestNG</b><br>Test class: KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Current share pricce is not displayed as per requirement expected [44] but found [44],
+	Upload file message is not displayed corret expected [1 File uploaded successfully] but found [ File uploaded successfully],
+	Inbox text is not displayed.. expected [true] but found [false],
+	Still message is displayed on UI expected [false] but found [true]
+	at KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG.methodBFromAssertionsInTestNG(SoftAssertionsInTestNG.java:49)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace168957945", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace168957945'><pre>java.lang.AssertionError: The following asserts failed:
+	Current share pricce is not displayed as per requirement expected [44] but found [44],
+	Upload file message is not displayed corret expected [1 File uploaded successfully] but found [ File uploaded successfully],
+	Inbox text is not displayed.. expected [true] but found [false],
+	Still message is displayed on UI expected [false] but found [true]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG.methodBFromAssertionsInTestNG(SoftAssertionsInTestNG.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG@528931cf</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.InvocationCount.verfyExistingUserCanBeEdited()'><b>verfyExistingUserCanBeEdited</b><br>Test class: KTCTC.FIRSTMAVENProject.InvocationCount</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at KTCTC.FIRSTMAVENProject.InvocationCount.verfyExistingUserCanBeEdited(InvocationCount.java:30)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace832432849", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace832432849'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at KTCTC.FIRSTMAVENProject.InvocationCount.verfyExistingUserCanBeEdited(InvocationCount.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.InvocationCount@ea1a8d5</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.DependentTestCases.verfyExistingUserCanBeEdited()'><b>verfyExistingUserCanBeEdited</b><br>Test class: KTCTC.FIRSTMAVENProject.DependentTestCases</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at KTCTC.FIRSTMAVENProject.DependentTestCases.verfyExistingUserCanBeEdited(DependentTestCases.java:24)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1058650291", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1058650291'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at KTCTC.FIRSTMAVENProject.DependentTestCases.verfyExistingUserCanBeEdited(DependentTestCases.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.DependentTestCases@1563da5</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.PriorityInTestNG.verfyNewUserCanBeAddedToSystem()'><b>verfyNewUserCanBeAddedToSystem</b><br>Test class: KTCTC.FIRSTMAVENProject.PriorityInTestNG</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at KTCTC.FIRSTMAVENProject.PriorityInTestNG.verfyNewUserCanBeAddedToSystem(PriorityInTestNG.java:18)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace942518407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace942518407'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at KTCTC.FIRSTMAVENProject.PriorityInTestNG.verfyNewUserCanBeAddedToSystem(PriorityInTestNG.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.PriorityInTestNG@458c1321</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG.verifyChildPlaBotFlow()'><b>verifyChildPlaBotFlow</b><br>Test class: KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG</td>
+<td><div><pre>java.lang.NullPointerException
+	at KTCTC.FIRSTMAVENProject.BotAuto.checkBotFlow(BotAuto.java:16)
+	at KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG.verifyChildPlaBotFlow(DataPRoviderInTestNG.java:82)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1250142026", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1250142026'><pre>java.lang.NullPointerException
+	at KTCTC.FIRSTMAVENProject.BotAuto.checkBotFlow(BotAuto.java:16)
+	at KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG.verifyChildPlaBotFlow(DataPRoviderInTestNG.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG@34cd072c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.AnnotationsInTestNG.VerifyUserCanLoginWithValidUserNameAndValidPassword()'><b>VerifyUserCanLoginWithValidUserNameAndValidPassword</b><br>Test class: KTCTC.FIRSTMAVENProject.AnnotationsInTestNG</td>
+<td></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.AnnotationsInTestNG@305fd85d</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.AnnotationsInTestNG.VerifyUserCanNotLoginWithInValidUserNameAndValidPassword()'><b>VerifyUserCanNotLoginWithInValidUserNameAndValidPassword</b><br>Test class: KTCTC.FIRSTMAVENProject.AnnotationsInTestNG</td>
+<td></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.AnnotationsInTestNG@305fd85d</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.AnnotationsInTestNG.VerifyUserCanNotLoginWithValidUserNameAndInValidPassword()'><b>VerifyUserCanNotLoginWithValidUserNameAndInValidPassword</b><br>Test class: KTCTC.FIRSTMAVENProject.AnnotationsInTestNG</td>
+<td></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.AnnotationsInTestNG@305fd85d</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.Annotation2.methodAFromAnnotation2()'><b>methodAFromAnnotation2</b><br>Test class: KTCTC.FIRSTMAVENProject.Annotation2</td>
+<td></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.Annotation2@11438d26</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.Annotation2.methodBFromAnnotation2()'><b>methodBFromAnnotation2</b><br>Test class: KTCTC.FIRSTMAVENProject.Annotation2</td>
+<td></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.Annotation2@11438d26</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.EnableClass.methodBFromEnableClass()'><b>methodBFromEnableClass</b><br>Test class: KTCTC.FIRSTMAVENProject.EnableClass</td>
+<td></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.EnableClass@2bbf4b8b</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.PriorityInTestNG.verfyExistingUserCanBeDeleted()'><b>verfyExistingUserCanBeDeleted</b><br>Test class: KTCTC.FIRSTMAVENProject.PriorityInTestNG</td>
+<td></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.PriorityInTestNG@458c1321</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.InvocationCount.verfyExistingUserCanBeDeleted()'><b>verfyExistingUserCanBeDeleted</b><br>Test class: KTCTC.FIRSTMAVENProject.InvocationCount</td>
+<td></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.InvocationCount@ea1a8d5</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.PriorityInTestNG.verfyExistingUserCanBeEdited()'><b>verfyExistingUserCanBeEdited</b><br>Test class: KTCTC.FIRSTMAVENProject.PriorityInTestNG</td>
+<td></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.PriorityInTestNG@458c1321</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.PriorityInTestNG.verfyNewUserCanBeAddedToSystem()'><b>verfyNewUserCanBeAddedToSystem</b><br>Test class: KTCTC.FIRSTMAVENProject.PriorityInTestNG</td>
+<td></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.PriorityInTestNG@458c1321</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.PriorityInTestNG.verfyNewUserCanBeAddedToSystem()'><b>verfyNewUserCanBeAddedToSystem</b><br>Test class: KTCTC.FIRSTMAVENProject.PriorityInTestNG</td>
+<td></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.PriorityInTestNG@458c1321</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.PriorityInTestNG.verfyNewUserCanBeAddedToSystem()'><b>verfyNewUserCanBeAddedToSystem</b><br>Test class: KTCTC.FIRSTMAVENProject.PriorityInTestNG</td>
+<td></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.PriorityInTestNG@458c1321</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.DependentTestCases.verfyNewUserCanBeAddedToSystem()'><b>verfyNewUserCanBeAddedToSystem</b><br>Test class: KTCTC.FIRSTMAVENProject.DependentTestCases</td>
+<td></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.DependentTestCases@1563da5</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.FIleUploadTestCase.verfyUserCanUploadFileSuccessfully()'><b>verfyUserCanUploadFileSuccessfully</b><br>Test class: KTCTC.FIRSTMAVENProject.FIleUploadTestCase</td>
+<td></td>
+<td>9</td>
+<td>KTCTC.FIRSTMAVENProject.FIleUploadTestCase@7a1ebcd8</td></tr>
+<tr>
+<td title='KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG.verifyAdultPlaBotFlow()'><b>verifyAdultPlaBotFlow</b><br>Test class: KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG</td>
+<td></td>
+<td>0</td>
+<td>KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG@34cd072c</td></tr>
+</table><p>
+</body>
+</html>

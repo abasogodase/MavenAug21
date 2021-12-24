@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="KT">
+  <test thread-count="5" name="CTC">
+    <classes>
+      <class name="KTCTC.FIRSTMAVENProject.PriorityInTestNG"/>
+      <class name="KTCTC.FIRSTMAVENProject.AnnotationsInTestNG"/>
+      <class name="KTCTC.FIRSTMAVENProject.Annotation2"/>
+      <class name="KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG"/>
+      <class name="KTCTC.FIRSTMAVENProject.FIleUploadTestCase"/>
+      <class name="KTCTC.FIRSTMAVENProject.AssertionsInTestNG"/>
+      <class name="KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG"/>
+      <class name="KTCTC.FIRSTMAVENProject.InvocationCount"/>
+      <class name="KTCTC.FIRSTMAVENProject.DependentTestCases"/>
+      <class name="KTCTC.FIRSTMAVENProject.EnableClass"/>
+    </classes>
+  </test> <!-- CTC -->
+</suite> <!-- KT -->

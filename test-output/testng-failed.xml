@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [KT]">
+  <test thread-count="5" name="CTC(failed)">
+    <classes>
+      <class name="KTCTC.FIRSTMAVENProject.DependentTestCases">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterMethodAnnotation"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="verfyNewUserCanBeAddedToSystem"/>
+          <include name="verfyExistingUserCanBeEdited"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethodAnnotation"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- KTCTC.FIRSTMAVENProject.DependentTestCases -->
+      <class name="KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG">
+        <methods>
+          <include name="methodBFromAssertionsInTestNG"/>
+          <include name="methodAFromAssertionsInTestNG"/>
+        </methods>
+      </class> <!-- KTCTC.FIRSTMAVENProject.SoftAssertionsInTestNG -->
+      <class name="KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG">
+        <methods>
+          <include name="verifyChildPlaBotFlow"/>
+          <include name="getUserData"/>
+        </methods>
+      </class> <!-- KTCTC.FIRSTMAVENProject.DataPRoviderInTestNG -->
+      <class name="KTCTC.FIRSTMAVENProject.AssertionsInTestNG">
+        <methods>
+          <include name="methodAFromAssertionsInTestNG"/>
+          <include name="methodBFromAssertionsInTestNG"/>
+        </methods>
+      </class> <!-- KTCTC.FIRSTMAVENProject.AssertionsInTestNG -->
+      <class name="KTCTC.FIRSTMAVENProject.InvocationCount">
+        <methods>
+          <include name="verfyExistingUserCanBeEdited"/>
+        </methods>
+      </class> <!-- KTCTC.FIRSTMAVENProject.InvocationCount -->
+      <class name="KTCTC.FIRSTMAVENProject.PriorityInTestNG">
+        <methods>
+          <include name="verfyNewUserCanBeAddedToSystem"/>
+        </methods>
+      </class> <!-- KTCTC.FIRSTMAVENProject.PriorityInTestNG -->
+    </classes>
+  </test> <!-- CTC(failed) -->
+</suite> <!-- Failed suite [KT] -->
